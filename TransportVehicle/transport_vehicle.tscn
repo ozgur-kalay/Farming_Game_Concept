@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://d22ne5y5v3r81"]
+
+[ext_resource type="Script" uid="uid://dctqrr0x441us" path="res://TransportVehicle/transport_vehicle.gd" id="1_hcbb7"]
+[ext_resource type="Texture2D" uid="uid://gvfj8cgkj1q7" path="res://Assets/Visual/TopDown Vehicles v1.17/PICKUP TOPDOWN/Blue/Blue_PICKUP_CLEAN_8D_000-sheet.png" id="2_bxufc"]
+[ext_resource type="Texture2D" uid="uid://qxfdbh7q5a5m" path="res://Assets/Visual/basic_tileset_and_assets_standard_v3.0/sprites/ladder-soil.png" id="3_jo63t"]
+
+[node name="TransportVehicle" type="Line2D" unique_id=215592693]
+script = ExtResource("1_hcbb7")
+
+[node name="VehicleSprite_East" type="Sprite2D" parent="." unique_id=1171734084]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_bxufc")
+offset = Vector2(0, -5)
+region_enabled = true
+region_rect = Rect2(0, 0, 96, 96)
+
+[node name="VehicleSprite_West" type="Sprite2D" parent="." unique_id=662532147]
+visible = false
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_bxufc")
+offset = Vector2(-5, -9)
+region_enabled = true
+region_rect = Rect2(96, 96, 96, 96)
+
+[node name="VehicleSprite_North" type="Sprite2D" parent="." unique_id=794033485]
+visible = false
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_bxufc")
+offset = Vector2(-2, 0)
+region_enabled = true
+region_rect = Rect2(0, 192, 96, 108)
+
+[node name="VehicleSprite_South" type="Sprite2D" parent="." unique_id=1871210890]
+visible = false
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_bxufc")
+offset = Vector2(-3, 0)
+region_enabled = true
+region_rect = Rect2(192, 0, 108, 96)
+
+[node name="Load" type="Sprite2D" parent="." unique_id=1536327263]
+position = Vector2(-9, -20.999998)
+scale = Vector2(0.28787887, 0.40476185)
+texture = ExtResource("3_jo63t")
+centered = false

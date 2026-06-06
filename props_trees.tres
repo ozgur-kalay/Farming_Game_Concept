@@ -1,0 +1,12 @@
+[gd_resource type="TileSet" format=3 uid="uid://lynq38d6ahdg"]
+
+[ext_resource type="Texture2D" uid="uid://dyiy0o5sxe37n" path="res://Assets/Visual/stardew_farm_assets/tree.png" id="1_nupme"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8lne1"]
+texture = ExtResource("1_nupme")
+texture_region_size = Vector2i(96, 128)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(96, 128)
+sources/1 = SubResource("TileSetAtlasSource_8lne1")

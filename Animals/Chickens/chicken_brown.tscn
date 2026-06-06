@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://7j8laxtqul00"]
+
+[ext_resource type="PackedScene" uid="uid://qiaqcoyo61ac" path="res://Animals/Chickens/chicken.tscn" id="1_uf864"]
+
+[node name="Chicken_Brown" unique_id=1650545760 instance=ExtResource("1_uf864")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1882533776]
+region_rect = Rect2(0, 0, 32, 32)

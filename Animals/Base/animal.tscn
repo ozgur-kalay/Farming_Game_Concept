@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://brgyyjmpj8x5u"]
+
+[ext_resource type="Script" uid="uid://c4kfh7gako8w8" path="res://Decorators/StateMachines/Node2DStateMachine/Node2DStateMachine.gd" id="2_kuumv"]
+[ext_resource type="Script" uid="uid://yxnsfw4uygr5" path="res://Animals/Base/idle_state.gd" id="3_671sg"]
+[ext_resource type="Script" uid="uid://f57f4rl826nt" path="res://Animals/Base/walk_state.gd" id="4_d0bxd"]
+[ext_resource type="Script" uid="uid://bd6tmfjp75m0a" path="res://Animals/Base/eat_state.gd" id="5_h7dkb"]
+[ext_resource type="Script" uid="uid://co21xjtno0pq3" path="res://Animals/Base/sitting_state.gd" id="6_1n0ap"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v4gev"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"eat",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"sitting",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Animal" type="Node2D" unique_id=1650545760]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=424228763]
+sprite_frames = SubResource("SpriteFrames_v4gev")
+animation = &"sitting"
+
+[node name="Node2DStateMachine" type="Node" parent="." unique_id=2098424185]
+script = ExtResource("2_kuumv")
+metadata/_custom_type_script = "uid://c4kfh7gako8w8"
+
+[node name="IdleState" type="Node" parent="Node2DStateMachine" unique_id=1391153253]
+script = ExtResource("3_671sg")
+metadata/_custom_type_script = "uid://hh1ep151gig1"
+
+[node name="WalkState" type="Node" parent="Node2DStateMachine" unique_id=2027641019]
+script = ExtResource("4_d0bxd")
+metadata/_custom_type_script = "uid://hh1ep151gig1"
+
+[node name="EatState" type="Node" parent="Node2DStateMachine" unique_id=801683790]
+script = ExtResource("5_h7dkb")
+metadata/_custom_type_script = "uid://hh1ep151gig1"
+
+[node name="SittingState" type="Node" parent="Node2DStateMachine" unique_id=1363737714]
+script = ExtResource("6_1n0ap")
+metadata/_custom_type_script = "uid://hh1ep151gig1"

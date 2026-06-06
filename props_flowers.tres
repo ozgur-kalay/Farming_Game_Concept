@@ -1,0 +1,33 @@
+[gd_resource type="TileSet" format=3 uid="uid://bl08pa2ja57c3"]
+
+[ext_resource type="Texture2D" uid="uid://cebssoi88j44h" path="res://Assets/Visual/stardew_farm_assets/environment/flowers/blue.png" id="1_1qfgq"]
+[ext_resource type="Texture2D" uid="uid://5jx8273io48e" path="res://Assets/Visual/stardew_farm_assets/environment/flowers/orange.png" id="2_sdsfq"]
+[ext_resource type="Texture2D" uid="uid://bmutlgmw8kgvj" path="res://Assets/Visual/stardew_farm_assets/environment/flowers/red.png" id="3_ro0u0"]
+[ext_resource type="Texture2D" uid="uid://bhjpb30i63yqn" path="res://Assets/Visual/stardew_farm_assets/environment/flowers/yellow.png" id="4_fy5yx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iikhr"]
+texture = ExtResource("1_1qfgq")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xiwxl"]
+texture = ExtResource("2_sdsfq")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gn8xl"]
+texture = ExtResource("3_ro0u0")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a5bdn"]
+texture = ExtResource("4_fy5yx")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/1 = SubResource("TileSetAtlasSource_iikhr")
+sources/2 = SubResource("TileSetAtlasSource_xiwxl")
+sources/3 = SubResource("TileSetAtlasSource_gn8xl")
+sources/4 = SubResource("TileSetAtlasSource_a5bdn")

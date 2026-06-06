@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://qiaqcoyo61ac"]
+
+[ext_resource type="PackedScene" uid="uid://brgyyjmpj8x5u" path="res://Animals/Base/animal.tscn" id="1_3pf2e"]
+[ext_resource type="Texture2D" uid="uid://ca50xw36hu38j" path="res://Assets/Visual/AnimalTextures/Chicken/chicken_white_32x32-sheet.png" id="2_pqd41"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jco18"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thshx"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewo6w"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8b3tp"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4kwt"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26esl"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jeuba"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_usbod"]
+atlas = ExtResource("2_pqd41")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s03cx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jco18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thshx")
+}],
+"loop": true,
+"name": &"eat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewo6w")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8b3tp")
+}],
+"loop": true,
+"name": &"sitting",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4kwt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26esl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jeuba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_usbod")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Chicken" unique_id=1650545760 instance=ExtResource("1_3pf2e")]
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=424228763]
+sprite_frames = SubResource("SpriteFrames_s03cx")
+animation = &"walk"
