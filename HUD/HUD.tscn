@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://kcc8xhfnaeul"]
+
+[ext_resource type="PackedScene" uid="uid://c2sql18riteg0" path="res://HUD/ui_bar_item.tscn" id="1_f31rt"]
+[ext_resource type="Texture2D" uid="uid://oo5hto84ukx2" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Apple Red.png" id="2_ihvjp"]
+[ext_resource type="Texture2D" uid="uid://cmy1d4j50iuxw" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Apple Green.png" id="3_33ejm"]
+[ext_resource type="Texture2D" uid="uid://0iqq2yt0rddx" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Apple Yellow.png" id="4_fjfvf"]
+[ext_resource type="Texture2D" uid="uid://557pdye0plqo" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Aubergine.png" id="5_65vjf"]
+[ext_resource type="Texture2D" uid="uid://m4nvpx5djtw3" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Beet.png" id="6_2gu3h"]
+[ext_resource type="Texture2D" uid="uid://b7yk0oqq7cme0" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Avocado.png" id="7_iob2k"]
+[ext_resource type="Texture2D" uid="uid://j644eqhpm306" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Broccoli.png" id="8_g452r"]
+[ext_resource type="Texture2D" uid="uid://bywxnci0y67uc" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Cabbage Green.png" id="9_ba18x"]
+[ext_resource type="Texture2D" uid="uid://m5lrwuub6vv5" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Cabbage Red.png" id="10_fc1lb"]
+[ext_resource type="Texture2D" uid="uid://chrfvok1gdgqh" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Carrot.png" id="11_84al1"]
+[ext_resource type="Texture2D" uid="uid://cunw3attnsgox" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Cherry.png" id="12_qg76d"]
+[ext_resource type="Texture2D" uid="uid://b7g08cvk6su1l" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Corn.png" id="13_h5t6a"]
+[ext_resource type="Texture2D" uid="uid://d263vby4fakam" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Grapefruit.png" id="14_fx1ia"]
+[ext_resource type="Texture2D" uid="uid://ocf5rjbq44gf" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Mushroom Poison.png" id="15_3qkmy"]
+[ext_resource type="Texture2D" uid="uid://xxl800grqm3u" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Onion White.png" id="16_j0kqr"]
+[ext_resource type="Texture2D" uid="uid://csdyswjfptftb" path="res://Assets/Visual/farm assets/Fruits and Vegetables/Garlic.png" id="17_5i5mr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f31rt"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.083955124, 0.14278722, 0.6997394, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="Hud" type="CanvasLayer" unique_id=803183126]
+
+[node name="Control" type="Control" parent="." unique_id=134066213]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1620856562]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Spacer" type="Control" parent="Control/VBoxContainer" unique_id=2143848293]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer" unique_id=1358976314]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Control/VBoxContainer/MarginContainer" unique_id=1211630614]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f31rt")
+
+[node name="GridContainer" type="GridContainer" parent="Control/VBoxContainer/MarginContainer/PanelContainer" unique_id=1418595186]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 8
+
+[node name="UiBarItem" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=972435660 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("2_ihvjp")
+
+[node name="UiBarItem2" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1507422217 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("3_33ejm")
+
+[node name="UiBarItem3" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=915559631 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("4_fjfvf")
+
+[node name="UiBarItem4" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=649695955 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("5_65vjf")
+
+[node name="UiBarItem5" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1645204766 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("6_2gu3h")
+
+[node name="UiBarItem6" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1153010907 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("7_iob2k")
+
+[node name="UiBarItem7" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1724858495 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("8_g452r")
+
+[node name="UiBarItem8" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=236856563 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("9_ba18x")
+
+[node name="UiBarItem9" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1521452334 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("10_fc1lb")
+
+[node name="UiBarItem10" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1885584756 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("11_84al1")
+
+[node name="UiBarItem11" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=2012414454 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("12_qg76d")
+
+[node name="UiBarItem12" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1019143702 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("13_h5t6a")
+
+[node name="UiBarItem13" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=316132275 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("14_fx1ia")
+
+[node name="UiBarItem14" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=202680738 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("15_3qkmy")
+
+[node name="UiBarItem15" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1790740939 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("16_j0kqr")
+
+[node name="UiBarItem16" parent="Control/VBoxContainer/MarginContainer/PanelContainer/GridContainer" unique_id=1685187045 instance=ExtResource("1_f31rt")]
+layout_mode = 2
+texture = ExtResource("17_5i5mr")

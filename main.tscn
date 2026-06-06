@@ -83,8 +83,10 @@
 [ext_resource type="PackedScene" uid="uid://d22ne5y5v3r81" path="res://TransportVehicle/transport_vehicle.tscn" id="81_f1p13"]
 [ext_resource type="PackedScene" uid="uid://cme25uuyodges" path="res://Animals/Chickens/chicken_white.tscn" id="82_4obbf"]
 [ext_resource type="PackedScene" uid="uid://7j8laxtqul00" path="res://Animals/Chickens/chicken_brown.tscn" id="83_1yv1y"]
+[ext_resource type="Script" uid="uid://dowanxshvbq8s" path="res://Animals/Base/animal.gd" id="83_5yh34"]
 [ext_resource type="PackedScene" uid="uid://dshvidlvr7bi8" path="res://Animals/Chickens/chicken_gray.tscn" id="84_5yh34"]
 [ext_resource type="PackedScene" uid="uid://jonkf325uxpb" path="res://Animals/Chickens/chicken_yellow.tscn" id="85_pjuso"]
+[ext_resource type="PackedScene" uid="uid://kcc8xhfnaeul" path="res://HUD/HUD.tscn" id="87_pjuso"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_birbe"]
 texture = ExtResource("2_phcyf")
@@ -1323,81 +1325,107 @@ points = PackedVector2Array(960, 1392, 1904, 1392, 1904, 1344)
 
 [node name="Chicken_White" parent="Animals" unique_id=1650545760 instance=ExtResource("82_4obbf")]
 position = Vector2(2176, 1488)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_White2" parent="Animals" unique_id=842144331 instance=ExtResource("82_4obbf")]
 position = Vector2(2464, 1360)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_White3" parent="Animals" unique_id=50536880 instance=ExtResource("82_4obbf")]
 position = Vector2(1528, 1344)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_White4" parent="Animals" unique_id=428971287 instance=ExtResource("82_4obbf")]
 position = Vector2(1248, 1872)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_White5" parent="Animals" unique_id=1593090210 instance=ExtResource("82_4obbf")]
 position = Vector2(840, 1248)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_White6" parent="Animals" unique_id=2002564781 instance=ExtResource("82_4obbf")]
 position = Vector2(928, 1248)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Brown" parent="Animals" unique_id=1246887028 instance=ExtResource("83_1yv1y")]
 position = Vector2(2096, 1368)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Brown2" parent="Animals" unique_id=499946489 instance=ExtResource("83_1yv1y")]
 position = Vector2(2128, 1608)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Brown3" parent="Animals" unique_id=231945831 instance=ExtResource("83_1yv1y")]
 position = Vector2(1544, 1792)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Brown4" parent="Animals" unique_id=779453028 instance=ExtResource("83_1yv1y")]
 position = Vector2(1184, 1200)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Brown5" parent="Animals" unique_id=622033485 instance=ExtResource("83_1yv1y")]
 position = Vector2(1176, 608)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Brown6" parent="Animals" unique_id=1623398002 instance=ExtResource("83_1yv1y")]
 position = Vector2(2024, 696)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Gray" parent="Animals" unique_id=209180817 instance=ExtResource("84_5yh34")]
 position = Vector2(2061.4248, 732.47253)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Gray2" parent="Animals" unique_id=1133187293 instance=ExtResource("84_5yh34")]
 position = Vector2(880, 968)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Gray3" parent="Animals" unique_id=867297047 instance=ExtResource("84_5yh34")]
 position = Vector2(440, 488)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Gray4" parent="Animals" unique_id=1081062460 instance=ExtResource("84_5yh34")]
 position = Vector2(752, 160)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Gray5" parent="Animals" unique_id=790942740 instance=ExtResource("84_5yh34")]
 position = Vector2(2976, 1720)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow" parent="Animals" unique_id=510865600 instance=ExtResource("85_pjuso")]
 position = Vector2(2623.2446, 577.28973)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow2" parent="Animals" unique_id=1259475442 instance=ExtResource("85_pjuso")]
 position = Vector2(2240, 1016)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow3" parent="Animals" unique_id=1427642416 instance=ExtResource("85_pjuso")]
 position = Vector2(2184, 1192)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow4" parent="Animals" unique_id=1063190311 instance=ExtResource("85_pjuso")]
 position = Vector2(2464, 1344)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow5" parent="Animals" unique_id=1925319525 instance=ExtResource("85_pjuso")]
 position = Vector2(1072, 968)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow6" parent="Animals" unique_id=1913569451 instance=ExtResource("85_pjuso")]
 position = Vector2(1528, 904)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow7" parent="Animals" unique_id=136212074 instance=ExtResource("85_pjuso")]
 position = Vector2(1528, 464)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow8" parent="Animals" unique_id=1359672969 instance=ExtResource("85_pjuso")]
 position = Vector2(576, 352)
+script = ExtResource("83_5yh34")
 
 [node name="Chicken_Yellow9" parent="Animals" unique_id=703724320 instance=ExtResource("85_pjuso")]
 position = Vector2(576, 352)
+script = ExtResource("83_5yh34")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=721468180]
 
@@ -1409,3 +1437,5 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0)
+
+[node name="Hud" parent="." unique_id=803183126 instance=ExtResource("87_pjuso")]

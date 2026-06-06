@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c2sql18riteg0"]
+
+[ext_resource type="Script" uid="uid://dv81qoiowwucs" path="res://HUD/ui_bar_item.gd" id="1_s416o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s416o"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0.74509805, 0.14509805, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+shadow_size = 2
+
+[node name="UiBarItem" type="Control" unique_id=972435660]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1856.0
+offset_bottom = -1016.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_s416o")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1578786104]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=204401111]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_s416o")
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/PanelContainer" unique_id=1360043166]
+custom_minimum_size = Vector2(46, 46)
+layout_mode = 2
+expand_mode = 1
