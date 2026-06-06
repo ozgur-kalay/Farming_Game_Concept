@@ -33,6 +33,9 @@ func update(delta: float) -> void:
 
 	var direction := client.global_position.direction_to(_target)
 
+	# Flip sprite when moving left
+	animated_sprite_2d.flip_h = direction.x < 0
+
 	animal.global_position += (
 		direction
 		* move_speed

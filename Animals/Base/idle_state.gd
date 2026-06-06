@@ -1,7 +1,7 @@
 extends Node2DState
 
-@export var wait_min: float = 3.0
-@export var wait_max: float = 15.0
+@export var wait_min: float = 0.0
+@export var wait_max: float = 2.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $"../../AnimatedSprite2D"
 
 var _active: bool = false
